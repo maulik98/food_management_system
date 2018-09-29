@@ -21,7 +21,8 @@ class FoodDetails extends Migration
             $table->string('food_quant');
             $table->string('status');
             $table->integer('donated_by')->unsigned();
-            $table->foreign('donated_by')->references('id')->on('users');            $table->timestamps();
+            $table->foreign('donated_by')->references('id')->on('users');            
+            $table->timestamps();
         });
     }
 
